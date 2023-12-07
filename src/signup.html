@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <nav id="navbar">
+          <ul>
+              <li class="item"><a href="../home.html">Home</a></li>
+              <li class="item"><a href="shop.html">Shop</a></li>
+              <li class="item"><a href="form.html">Log In</a></li>
+          </ul>
+      </nav>
+      </header>
+    <form id="personalDetailsForm">
+    <h2>SIGNUP DETAILS</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name" required >
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      <div class="gender-options">
+        <label>Gender:</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <button type="button" onclick="submitForm()">SIGN UP</button>
+    </form>
+  </div>
+  <footer>
+    <div style="position:relative; right:200px; top:350px;">
+        Copyright &copy; www.Canvera.com ALL rights reserved
+    </div>
+</footer>
+
+  <script src="signup.js"></script>
+
+</body>
+</html>
